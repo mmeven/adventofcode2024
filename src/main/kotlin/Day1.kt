@@ -14,8 +14,8 @@ fun resolveDay1() {
         val firstInt = splitted.first().toInt()
         val secondInt = splitted.last().toInt()
 
-        firstColumn.addFirst(firstInt)
-        secondColumn.addFirst(secondInt)
+        firstColumn += firstInt
+        secondColumn += secondInt
         occurences[secondInt] = occurences.getOrDefault(secondInt, 0) + 1
     }
 
